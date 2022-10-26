@@ -1,0 +1,191 @@
+@import "global.less";
+@import "variables.less";
+
+body{
+    display: flex;
+    flex-direction: row;
+
+    .left_container{
+        align-items: center;
+        background-color: @background_gray;
+        display: flex;
+        display: flex;
+        flex: 1 1;
+        height: 100vh;
+        justify-content: center;
+
+        #form_container{
+            background-color: @white;
+            border-radius: 6px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+            height: max-content;
+            padding: 33px 40px 40px 40px;
+            width: 450px;
+
+            h1{
+                color: @blue; 
+                font-family: "Poppins-SemiBold";
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 33px;
+                margin: 0px;
+            }
+
+            form{
+                h2{
+                    color: #152C61;
+                    font-family: "Poppins-SemiBold";
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 60px;
+                    margin: 38px 0px 20px 0px;
+                }
+
+                .form_group{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+
+                    label{
+                        color: #152C61;
+                        display: inline-flex;
+                        font-family: "Poppins-Light";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 24px;
+                        margin-bottom: 6px;
+                    }
+
+                    input{
+                        background: rgba(44, 107, 255, 0.08);
+                        border-radius: 4px;
+                        border: none;
+                        color: #152C61;
+                        font-family: "Poppins-Light";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 21px;
+                        outline: none;
+                        padding: 17px 10px;
+                        width: 100%;
+                    }
+
+                    a{
+                        color: #000000;
+                        font-family: "Poppins-Light";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 21px;
+                        opacity: 0.5;
+                        text-decoration: none;
+
+                        &:hover{
+                            color: @blue;
+                        }
+                    }
+                }
+
+                button[type="submit"]{
+                    align-items: center;
+                    background: @blue;
+                    border-radius: 4px;
+                    border: none;
+                    color: @white;
+                    display: flex;
+                    font-family: "Poppins-SemiBold";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    height: 55px;
+                    justify-content: center;
+                    line-height: 24px;
+                    margin: 40px auto 36px auto;
+                    outline: none;
+                    text-transform: uppercase;
+                    width: 150px;
+                }
+
+                p{
+                    color: @gray;
+                    font-family: "Poppins-Regular";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 0.03em;
+                    line-height: 22px;
+                    text-align: center;
+
+                    &.error_message{
+                        color: @red;
+                        font-family: "Poppins-Light";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 21px;
+                        position: relative;
+                        text-align: left;
+                        top: -21px;
+
+                        &:empty{
+                            display: none;
+                        }
+                    }
+
+                    &#policy{
+                        color: @black;
+                        font-family: "Poppins-Regular";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 24px;
+                        text-align: center;
+                        
+                        a{
+                            color: @blue;
+                            font-family: "Poppins-Regular";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 24px;
+                            outline: none;
+                        }
+                    }
+
+                    button{
+                        background-color: transparent;
+                        border: none;
+                        color: @blue;
+                        font-family: "Poppins-Regular";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        letter-spacing: 0.03em;
+                        line-height: 22px;
+                        outline: none;
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .right_container{
+        background: rgba(44, 107, 255, 0.51);
+        display: flex;
+        height: 100vh;
+        width: 583px;
+
+        img{
+            height: auto;
+            left: -77px;
+            position: relative;
+            width: 418px;
+        }
+    }
+}

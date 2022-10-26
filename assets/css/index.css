@@ -1,0 +1,308 @@
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Colors Variables */
+/* Font Variable */
+body {
+  background-color: #fbfbfb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  min-width: 1366px;
+}
+body .container {
+  margin: 0px auto;
+  max-width: 1140px;
+}
+body .hidden {
+  display: none !important;
+}
+body .disabled,
+body [disabled] {
+  opacity: .5;
+  pointer-events: none;
+}
+body button {
+  cursor: pointer;
+}
+body button.primary_button {
+  background: #2c6bff;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-family: 'Poppins-Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  outline: none;
+  text-align: center;
+}
+body .error_input {
+  background: rgba(225, 85, 76, 0.08) !important;
+  border: 1px solid #e1554c !important;
+}
+body .modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+body .modal .modal_content {
+  background: #FFFFFF;
+  border-radius: 6px;
+  margin: 15% auto;
+  padding: 50px;
+  position: relative;
+  width: 80%;
+}
+body .modal .modal_content form > .close_modal_button {
+  background-color: transparent;
+  background-image: url("../images/the_wall_icons.png");
+  background-position: -116px 0px;
+  border: none;
+  display: flex;
+  height: 30px;
+  outline: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+}
+body .modal .modal_content form h3 {
+  color: #152C61;
+  font-family: 'Poppins-Medium';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 39px;
+  margin-top: 0px;
+  text-align: center;
+}
+body .modal .modal_content form p {
+  color: #152C61;
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px auto 23px auto;
+  text-align: center;
+  width: 410px;
+}
+body .modal .modal_content form .buttons_container {
+  display: flex;
+  justify-content: center;
+}
+body .modal .modal_content form .buttons_container button:not(.primary_button) {
+  background-color: transparent;
+  border: none;
+  color: #707070;
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 15px;
+  outline: none;
+}
+body .modal .modal_content form .buttons_container button.primary_button {
+  height: 46px;
+  margin-left: 15px;
+  width: 120px;
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+body .left_container {
+  align-items: center;
+  background-color: #fbfbfb;
+  display: flex;
+  flex: 1 1;
+  height: 100vh;
+  justify-content: center;
+}
+body .left_container #form_container {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  height: max-content;
+  padding: 33px 40px 40px 40px;
+  width: 450px;
+}
+body .left_container #form_container h1 {
+  color: #2c6bff;
+  font-family: "Poppins-SemiBold";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px;
+  margin: 0px;
+}
+body .left_container #form_container form h2 {
+  color: #152C61;
+  font-family: "Poppins-SemiBold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 38px 0px 20px 0px;
+}
+body .left_container #form_container form .form_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+body .left_container #form_container form .form_group label {
+  color: #152C61;
+  display: inline-flex;
+  font-family: "Poppins-Light";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+body .left_container #form_container form .form_group input {
+  background: rgba(44, 107, 255, 0.08);
+  border-radius: 4px;
+  border: none;
+  color: #152C61;
+  font-family: "Poppins-Light";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  outline: none;
+  padding: 17px 10px;
+  width: 100%;
+}
+body .left_container #form_container form .form_group a {
+  color: #000000;
+  font-family: "Poppins-Light";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  opacity: 0.5;
+  text-decoration: none;
+}
+body .left_container #form_container form .form_group a:hover {
+  color: #2c6bff;
+}
+body .left_container #form_container form button[type="submit"] {
+  align-items: center;
+  background: #2c6bff;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  height: 55px;
+  justify-content: center;
+  line-height: 24px;
+  margin: 40px auto 36px auto;
+  outline: none;
+  text-transform: uppercase;
+  width: 150px;
+}
+body .left_container #form_container form p {
+  color: #707070;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 22px;
+  text-align: center;
+}
+body .left_container #form_container form p.error_message {
+  color: #e1554c;
+  font-family: "Poppins-Light";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  position: relative;
+  text-align: left;
+  top: -21px;
+}
+body .left_container #form_container form p.error_message:empty {
+  display: none;
+}
+body .left_container #form_container form p#policy {
+  color: #152c61;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+body .left_container #form_container form p#policy a {
+  color: #2c6bff;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  outline: none;
+}
+body .left_container #form_container form p button {
+  background-color: transparent;
+  border: none;
+  color: #2c6bff;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 22px;
+  outline: none;
+  padding: 0px;
+}
+body .right_container {
+  background: rgba(44, 107, 255, 0.51);
+  display: flex;
+  height: 100vh;
+  width: 583px;
+}
+body .right_container img {
+  height: auto;
+  left: -77px;
+  position: relative;
+  width: 418px;
+}

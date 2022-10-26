@@ -1,0 +1,134 @@
+@import "variables.less";
+
+body{
+    background-color: @background_gray;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    min-width: 1366px;
+
+    .container{
+        margin: 0px auto;
+        max-width: 1140px;
+    }
+    
+    .hidden{
+        display: none !important;
+    }
+    
+    .disabled, [disabled]{
+        opacity: .5;
+        pointer-events: none;
+    }
+
+    button{
+        cursor: pointer;
+
+        &.primary_button{
+            background: @blue;
+            border-radius: 6px;
+            border: none;
+            color: @white;
+            font-family: 'Poppins-Medium';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            outline: none;
+            text-align: center;
+        }
+    }
+
+    .error_input{
+        background: rgba(225, 85, 76, 0.08) !important;
+        border: 1px solid @red !important;
+    }
+
+    .modal {
+        background-color: rgba(0,0,0,0.4); 
+        display: none; 
+        height: 100%; 
+        left: 0;
+        overflow: auto; 
+        position: fixed; 
+        top: 0;
+        width: 100%; 
+        z-index: 1; 
+
+        .modal_content {
+            background: #FFFFFF;
+            border-radius: 6px;
+            margin: 15% auto; 
+            padding: 50px;
+            position: relative;
+            width: 80%; 
+
+            form{
+                >.close_modal_button{
+                    background-color: transparent;
+                    background-image: url("./../images/the_wall_icons.png");
+                    background-position: -116px 0px;
+                    border: none;
+                    display: flex;
+                    height: 30px;
+                    outline: none;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    width: 30px;
+                }
+
+                h3{
+                    color: #152C61;
+                    font-family: 'Poppins-Medium';
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 39px;
+                    margin-top: 0px;
+                    text-align: center;
+                }
+
+                p{
+                    color: #152C61;
+                    font-family: 'Poppins-Regular';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin: 0px auto 23px auto;
+                    text-align: center;
+                    width: 410px;
+                }
+
+                .buttons_container{
+                    display: flex;
+                    justify-content: center;
+
+                    button{
+                        &:not(.primary_button){
+                            background-color: transparent;
+                            border: none;
+                            color: @gray;
+                            font-family: 'Poppins-Regular';
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                            margin-right: 15px;
+                            outline: none;
+                        }
+
+                        &.primary_button{
+                            height: 46px;
+                            margin-left: 15px;
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login or Register Page for the wall activity">
+    <meta name="author" content="Jerwin A. Fernandez">
+    <title>The Wall | Login/Register</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/index.css">
+
+</head>
+<body>
+    <section class="left_container">
+        <div id="form_container">
+            <h1>The Wall</h1>
+
+            <!-- Login Form -->
+            <form action="#" method="POST" autocomplete="off" id="login_form" class="">
+                <h2>Sign In</h2>
+
+                <div class="form_group">
+                    <label for="login_email_address_input">Email</label>
+                    <input type="email" name="email" id="login_email_address_input" placeholder="Email Address" tabindex="1">
+                </div>
+
+                <div class="form_group">
+                    <label for="login_password_input">Password</label>
+                    <a href="#">Forgot Password?</a>
+                    <input type="password" name="password" id="login_password_input" placeholder="Password" tabindex="2">
+                </div>
+                
+                <button type="submit" tabindex="3">SIGN IN</button>
+                <p>I don't have an account? <button type="button" id="show_sign_up_button" tabindex="4">Sign up</button></p>
+            </form>
+
+            <!-- Register Form -->
+            <form action="#" method="POST" autocomplete="off" id="register_form" class="hidden">
+                <h2>Sign Up</h2>
+
+                <div class="form_group">
+                    <label for="register_email_address_input">Email</label>
+                    <input type="email" name="register_email" id="register_email_address_input" placeholder="Email Address">
+                </div>
+
+                <div class="form_group">
+                    <label for="register_password_input">Password</label>
+                    <input type="password" name="password" id="register_password_input" placeholder="Password">
+                </div>
+
+                <div class="form_group">
+                    <label for="register_confirm_password_input">Confirm Password</label>
+                    <input type="password" name="password" id="register_confirm_password_input" placeholder="Password">
+                </div>
+
+                <p class="error_message"></p>
+
+                <p id="policy">By creating an account, you agree with The Wall's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
+                
+                <button type="submit">SIGN UP</button>
+                <p>I don't have an account? <button type="button" id="show_sign_in_button">Sign in</button></p>
+            </form>
+        </div>
+    </section>
+
+    <div class="right_container">
+        <img src="./../assets/images/login_background.svg" alt="Person with Wall background">
+    </div>
+
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/constants.js"></script>
+</body>
+</html>
