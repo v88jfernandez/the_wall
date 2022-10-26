@@ -57,7 +57,7 @@ submitLoginForm = (event) => {
         validateInput(login_inputs[counter]);
     }
 
-    /* If the form inputs is all passed, redirect the user inside dashboard page */ 
+    /* If the form inputs are all passed, redirect the user inside dashboard page */ 
     if(!document.querySelectorAll("#login_form .error_input").length){
         window.location.replace("dashboard.html");
     }
@@ -95,7 +95,7 @@ submitRegisterForm = (event) => {
         error_message.textContent = "";
     }
 
-    /* If the form inputs is all passed, redirect the user inside dashboard page */ 
+    /* If the form inputs are all passed, redirect the user inside dashboard page */ 
     if(!document.querySelectorAll("#register_form .error_input").length){
         window.location.replace("dashboard.html");
     }
